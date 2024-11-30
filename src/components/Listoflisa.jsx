@@ -7,7 +7,7 @@ export function Listoflisa(props) {
         title: props.title
     });
     const style = {
-        opacity: isOver ? 1 : 0.65,
+        opacity: isOver ? 1 : 0.85,
     };
 
     return (

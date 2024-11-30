@@ -13,30 +13,25 @@
 .listoflisa {
   height: 12rem;
   width: 20rem;
-  border: yellow solid 2px;
   background-color: rgb(74, 55, 100);
 }
 
 .listofalex {
   height: 12rem;
   width: 20rem;
-  border: yellow solid 2px;
   background-color: rgb(225, 171, 22);
 }
 
 .draggable {
-  height: 2rem;
-  width: 4rem;
-  margin: .25rem;
-  border: yellow solid 2px;
+  border: rgb(72, 72, 41) solid 2px;
   color: white;
   border-radius: 1rem;
 }
 
-.columnContainer {
-  border: cyan 3px dashed;
+.columncontainer {
+  /* border: cyan 3px dashed; */
   display: flex;
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }

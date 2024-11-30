@@ -5,7 +5,8 @@ import { CSS } from '@dnd-kit/utilities';
 export function Draggable(props) {
     const { attributes, listeners, setNodeRef, transform } = useDraggable({
         id: props.id,
-        title: props.title
+        title: props.title,
+        color: props.color
     });
 
     // Within your component that receives `transform` from `useDraggable`:
@@ -22,7 +23,8 @@ export function Draggable(props) {
             {...attributes}
         >
             {/* {props.children} */}
-            <h2>{props.title}</h2>
+            <p>{props.title}</p>
+            <p>{props.color}</p>
         </button>
     );
 }

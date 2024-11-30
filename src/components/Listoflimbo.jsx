@@ -1,17 +1,16 @@
 import React from 'react';
 import { useDroppable } from '@dnd-kit/core';
 
-export function Listofalex(props) {
+export function Listoflimbo(props) {
     const { isOver, setNodeRef } = useDroppable({
         id: props.id,
-        title: props.title
     });
     const style = {
-        opacity: isOver ? 1 : 0.85,
+        opacity: isOver ? 1 : 0.25,
     };
 
     return (
-        <div className="listofalex" ref={setNodeRef} style={style}>
+        <div className="droppable" ref={setNodeRef} style={style}>
             {props.children}
         </div>
     );
